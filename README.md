@@ -2,8 +2,10 @@
 btc watch dog
 
 ## Folder 
-- release artifacts
-- library source code
+- release 
+artifacts
+- library 
+source code
 
 ## Dependencies
 ```groovy
