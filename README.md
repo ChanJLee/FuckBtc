@@ -19,24 +19,56 @@ source code
 
 ## How to use
 
-1. Use [DingDing](https://www.dingtalk.com/) to create a robot 
+1. clone the repo
 
-2. clone the repo and 
-```shell
-cd release
+2. 
+```
+cd repo_dir/release
 ```
 
-3. fetch the token and modify fuck.config
+3. Use [DingDing](https://www.dingtalk.com/) to create a robot and copy webhook
+
+![webhook](art/DingTalk20170916123353.png)
+
+Note that you may get the following url
 ```
-ROBOT_TOKEN=your token
+https://oapi.dingtalk.com/robot/send?access_token=c68b777981a8cfe320497d199c0c744f113e5984f9b4c2b7dc6d5cc
 ```
-4. run 
+
+modify fuck.config and add:
+```
+DING_WEB_HOOK=c68b777981a8cfe320497d199c0c744f113e5984f9b4c2b7dc6d5cc
+```
+
+4. go to [huobi](https://www.huobi.com/account/account.php?a=show) and get api key
+
+![api key](art/DingTalk20170916125101.png)
+
+copy api key and api secret key then modify fuck.config
+```
+HUO_BI_ACCESS_KEY=your api key
+HUO_BI_SECRET_KEY=your api secret key
+```
+
+5. run 
 ```
 ./fuck.sh
 ```
 
 ## User Define
 
-modify fuck.config
 
-## How does it work
+In fuck btc we support the following settings
+
+```
+BTC_MAX_DURATION=20000
+ETH_MAX_DURATION=20000
+HEART_BEAT_INTERVAL=300000
+# big transaction threshold
+BTC_WARNING_THRESHOLD=10
+ETH_WARNING_THRESHOLD=100
+HUO_BI_ACCESS_KEY=8299a236f-17ec3-8b7fa980-1f1d3
+HUO_BI_SECRET_KEY=342e59-a8bfd7b7-aa530-407ff
+VERSION=1.0.0
+DING_WEB_HOOK=c68b7779c9154c738cfe320497d199c0c744f113e5984f9b4c2b7dc6d5cc
+```
