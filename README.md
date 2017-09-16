@@ -35,7 +35,7 @@ Note that you may get the following url
 https://oapi.dingtalk.com/robot/send?access_token=c68b777981a8cfe320497d199c0c744f113e5984f9b4c2b7dc6d5cc
 ```
 
-modify fuck.config and add:
+modify fuck.config and add:
 ```
 DING_WEB_HOOK=c68b777981a8cfe320497d199c0c744f113e5984f9b4c2b7dc6d5cc
 ```
